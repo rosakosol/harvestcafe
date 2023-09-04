@@ -10,23 +10,31 @@
     </head>
     <body>
         <section class="home-container">
-            <div class="menu-container">HAMBURGER
-                <nav>
+            <div class="navmenu-container">
+                <div class="hamburger-container">
+                    <button onclick="myFunction()"><img src="img/menu.svg" alt="Black symbol with three lines depicting hamburger menu"/></button>
+                </div>
+                <nav class="nav-container">
                     <ul>
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#menu">Menu</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="logo-container">LOGO</div>
+            <div class="logo-container">
+                <img src="img/logo-black.svg" alt="Black and white logo showing a upside-down fork and Harvest Cafe in capital letters"/>
+            </div>
             <div class="subheading-container">
                 <h3>123 George St, Adelaide SA 5000</h3>
-                <span>OPEN</span>
-                <span>CLOSED</span>
-                <h3>DATE</h3>
-                <div class="img-container">
-                    <img src="" alt=""/>
+                <div class="open-container">
+                    <span class="active">OPEN</span>
+                    <span>CLOSED</span>
+                    <h3>DATE</h3>
+                </div>
+                <div class="img-container box-img">
+                    <img src="img/home.jpg" alt="Inside of cafe showing barista and rustic interior"/>
                 </div>
             </div>
         </section>
@@ -36,8 +44,9 @@
                 <p>Ipsum irure quis deserunt sint qui velit aliquip duis veniam. Reprehenderit in in ut adipisicing irure reprehenderit eiusmod cillum incididunt occaecat anim occaecat voluptate cupidatat. Eiusmod deserunt officia quis excepteur amet amet dolore anim laborum dolor tempor nulla ex aliquip.
                 </p>
             </div>
-            <div class="img-container">
-                <img src="" alt=""/>
+            <div class="img-container box-img">
+                <img id="about-img-1" src="img/about-1.jpg" alt="Two containers, top-down view showing an avocado, chickpea and rice bowl with lemons"/>
+                <img src="img/about-2.jpg" alt="Two slices of banana bread with a light-coloured spread, yellow capsicum and fruits decorating the sides of the plate"/>
             </div>
         </section>
         <section class="vegan-container">
@@ -53,13 +62,52 @@
                 <p>Ipsum irure quis deserunt sint qui velit aliquip duis veniam. Reprehenderit in in ut adipisicing irure reprehenderit eiusmod cillum incididunt occaecat anim occaecat voluptate cupidatat. Eiusmod deserunt officia quis excepteur amet amet dolore anim laborum dolor tempor nulla ex aliquip.
                 </p>
             </div>
-            <h2>Breakfast</h2>
-            <h2>Lunch</h2>
-            <h2>Drinks</h2>
-            <div class="img-container">
-                <img src="" alt=""/>
-                <img src="" alt=""/>
-                <img src="" alt=""/>
+            <div class="menu-dropdown-container">
+                <h2>Breakfast</h2>
+                <img class="icon" src="/img/plus.svg" alt="Plus symbol"/>
+                <div class="menu-item-container">
+                    <table>
+                        <tr>
+                            <td>Eggs Benedict</td>
+                            <td>6.00</td>
+                        </tr>
+                        <tr>
+                            <td>Toast</td>
+                            <td>6.00</td>
+                        </tr>
+                    </table>
+                </div>
+                <img id="breakfast-img" src="img/breakfast.jpg" alt="Muesli yoghurt bowl with strawberries, blackberries and bananas"/>
+                <h2>Lunch</h2>
+                <img class="icon" src="/img/plus.svg" alt="Plus symbol"/>
+                <div class="menu-item-container">
+                    <table>
+                        <tr>
+                            <td>Eggs Benedict</td>
+                            <td>6.00</td>
+                        </tr>
+                        <tr>
+                            <td>Toast</td>
+                            <td>6.00</td>
+                        </tr>
+                    </table>
+                </div>
+                <img id="lunch-img" src="img/lunch.jpg" alt="Burger with salad and a wrap with salad on two different plates"/>
+                <h2>Drinks</h2>
+                <img class="icon" src="/img/plus.svg" alt="Plus symbol"/>
+                <div class="menu-item-container">
+                    <table>
+                        <tr>
+                            <td>Eggs Benedict</td>
+                            <td>6.00</td>
+                        </tr>
+                        <tr>
+                            <td>Toast</td>
+                            <td>6.00</td>
+                        </tr>
+                    </table>
+                </div>
+                <img id="drinks-img" src="img/drinks.jpeg" alt="Two blueberry smoothies"/>
             </div>
         </section>
         <section class="mission-container">
@@ -69,7 +117,7 @@
                 </p>
             </div>
             <div class="img-container">
-                <img src="" alt=""/>
+                <img src="img/mission.jpg" alt="Bright green grassy hills in a mountainous area"/>
             </div>
         </section>
         <section class="social-container">
@@ -79,25 +127,30 @@
                 </p>
             </div>
             <div class="img-container">
-                <img src="" alt=""/>
+                <img src="img/hashtag.jpg" alt="POV of someone taking photo on iPhone of a woman smiling at a venue"/>
             </div>
         </section>
         <section class="contact-container" id="contact">
             <div class="container-text">
                 <h1>Contact</h1>
-                <p>Address:<br>123 George St<br>Adelaide SA 5000</p>
-                <p>Tel:<br>08 1234 5678</p>
-                <p>Email:<br><a href="mailto: info@harvestcafe.com.au">info@harvestcafe.com.au</a></p>
+                <p><span>Address:</span><br>123 George St<br>Adelaide SA 5000</p>
+                <p><span>Tel:</span><br>08 1234 5678</p>
+                <p><span>Email:</span><br><a href="mailto: info@harvestcafe.com.au">info@harvestcafe.com.au</a></p>
             </div>
 
         </section>
         <footer class="footer-container">
-            <div class="logo-container">LOGO</div>
-            <h4>Tel: 08 1234 5678</h4>
-            <h4>Email: <a href="mailto: info@harvestcafe.com.au">info@harvestcafe.com.au</a></h4>
+            <div class="logo-container">
+                <img src="img/logo-white.svg" alt="White logo showing a upside-down fork and Harvest Cafe in capital letters"/>     
+            </div>
+            <div class="footer-text">
+                <h4>Tel: 08 1234 5678</h4>
+                <h4>Email: <a href="mailto: info@harvestcafe.com.au">info@harvestcafe.com.au</a></h4>    
+            </div>
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.3732988580464!2d138.61099514072217!3d-34.94725127294622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0ceee9835e861%3A0xfe2d2e0bc04b4981!2s123%20George%20St%2C%20Unley%20SA%205061!5e0!3m2!1sen!2sau!4v1693717426444!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </footer>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
