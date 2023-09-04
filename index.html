@@ -10,28 +10,29 @@
     </head>
     <body>
         <section class="home-container">
-            <div class="navmenu-container">
-                <div class="hamburger-container">
-                    <button onclick="myFunction()"><img src="img/menu.svg" alt="Black symbol with three lines depicting hamburger menu"/></button>
-                </div>
-                <nav class="nav-container">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#contact">Contact</a></li>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="navmenu">
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>About</li></a>
+                        <a href="#"><li>Menu</li></a>
+                        <a href="#"><li>Contact</li></a>
                     </ul>
-                </nav>
-            </div>
-            <div class="logo-container">
-                <img src="img/logo-black.svg" alt="Black and white logo showing a upside-down fork and Harvest Cafe in capital letters"/>
-            </div>
+                </div>
+                <div class="logo-container">
+                    <img src="img/logo-black.svg" alt="Black and white logo showing a upside-down fork and Harvest Cafe in capital letters"/>
+                </div>
+            </nav>
             <div class="subheading-container">
                 <h3>123 George St, Adelaide SA 5000</h3>
                 <div class="open-container">
                     <span class="active">OPEN</span>
                     <span>CLOSED</span>
-                    <h3>DATE</h3>
+                    <h3 id="date">DATE</h3>
                 </div>
                 <div class="img-container box-img">
                     <img src="img/home.jpg" alt="Inside of cafe showing barista and rustic interior"/>
