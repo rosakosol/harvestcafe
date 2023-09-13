@@ -1,5 +1,5 @@
 var date = new Date();
-var adelaideTime = date.toLocaleDateString('en-us', { weekday:"short", year:"numeric", month:"short", day:"numeric", hour:"numeric", minute:"numeric"}); 
+var adelaideTime = date.toLocaleDateString('en-us', { timeZone:"Australia/Adelaide", weekday:"short", year:"numeric", month:"short", day:"numeric", hour:"numeric", minute:"numeric"}); 
 // Removes comma from date
 adelaideTime = adelaideTime.split(',').join('');
 
