@@ -151,7 +151,7 @@ h2 {
 
 h3 {
     font-family: "courier_newbold", serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 1rem; 
 }
 
@@ -187,7 +187,7 @@ section {
 
 /* IMAGES & MEDIA */
 .box-img img {
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 img {
@@ -200,6 +200,10 @@ img {
 
 .logo-container {
     margin: 2rem auto;
+}
+
+.logo-container img {
+    width: 70vw;
 }
 
 .map-container iframe {
@@ -218,12 +222,12 @@ nav {
     display: flex;
 }
 
-#menuToggle
-{
+#menuToggle {
   display: block;
   position: relative;
   top: 2rem;
-  left: 2rem;
+  left: 1rem;
+  height: 100%;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -427,6 +431,55 @@ span {
     width: calc(100% / 3);
 }
 
+
+.plus-toggle {
+    > label {
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+      position: relative;
+      display: block;
+      
+      &:before,
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: .2rem;
+        background: $light;
+        height: calc(2rem / 1.8);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: all .3s ease;
+      }
+      
+      &:after {
+        width: calc(2rem / 1.8);
+        height: .2rem;
+      }
+    }
+    
+    > input {
+      height: 0;
+      width: 0;
+      overflow: hidden;
+      
+      &:checked + label {
+        &:before {
+          transform: rotate(-90deg);
+        }
+        
+        &:after {
+          transform: rotate(-180deg);
+          opacity: 0;
+        }
+      }
+    }
+  }
+
 .menu-item-container {
     padding: 0 2rem;
     width: 100%;
@@ -479,7 +532,7 @@ span {
     display: block;
     background-color: transparent;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0px;
 }
 

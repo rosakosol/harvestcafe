@@ -115,7 +115,7 @@ h2 {
 
 h3 {
   font-family: "courier_newbold", serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 1rem;
 }
 
@@ -150,7 +150,7 @@ section {
 
 /* IMAGES & MEDIA */
 .box-img img {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 img {
@@ -163,6 +163,10 @@ img {
 
 .logo-container {
   margin: 2rem auto;
+}
+
+.logo-container img {
+  width: 70vw;
 }
 
 .map-container iframe {
@@ -185,7 +189,8 @@ nav {
   display: block;
   position: relative;
   top: 2rem;
-  left: 2rem;
+  left: 1rem;
+  height: 100%;
   z-index: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -365,6 +370,44 @@ span {
   width: 33.3333333333%;
 }
 
+.plus-toggle > label {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+.plus-toggle > label:before, .plus-toggle > label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.2rem;
+  background: #FDF4E3;
+  height: 1.1111111111rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+.plus-toggle > label:after {
+  width: 1.1111111111rem;
+  height: 0.2rem;
+}
+.plus-toggle > input {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+.plus-toggle > input:checked + label:before {
+  transform: rotate(-90deg);
+}
+.plus-toggle > input:checked + label:after {
+  transform: rotate(-180deg);
+  opacity: 0;
+}
+
 .menu-item-container {
   padding: 0 2rem;
   width: 100%;
@@ -416,7 +459,7 @@ span {
   display: block;
   background-color: transparent;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0px;
 }
 
