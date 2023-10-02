@@ -7,6 +7,7 @@
         <meta name="description" content="Website for Harvest Cafe, a vegan cafe in Adelaide, Australia">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
     <body>
         <section class="home-container">
@@ -64,12 +65,14 @@
                 </p>
             </div>
             <div class="menu-dropdown-container">
-                <h2>Breakfast</h2>
-                <div class="plus-toggle">
-                    <input type="checkbox" id="plus-toggle-breakfast" />
-                    <label for="plus-toggle-breakfast"></label>
+                <div class="menu-label">
+                    <h2>Breakfast</h2>
+                        <div class="plus-toggle">
+                            <input type="checkbox" id="plus-toggle-breakfast" />
+                            <label for="plus-toggle-breakfast" onclick="breakfast_toggle()"></label>
+                        </div>
                 </div>
-                <div class="menu-item-container">
+                <div id="menu-toggle-breakfast" class="menu-item-container" >
                     <table>
                         <tr>
                             <td>Eggs Benedict</td>
@@ -82,12 +85,14 @@
                     </table>
                 </div>
                 <img id="breakfast-img" src="img/breakfast.jpg" alt="Muesli yoghurt bowl with strawberries, blackberries and bananas"/>
-                <h2>Lunch</h2>
-                <div class="plus-toggle">
-                    <input type="checkbox" id="plus-toggle-lunch" />
-                    <label for="plus-toggle-lunch"></label>
+                <div class="menu-label">
+                    <h2>Lunch</h2>
+                    <div class="plus-toggle">
+                        <input type="checkbox" id="plus-toggle-lunch" />
+                        <label for="plus-toggle-lunch" onclick="lunch_toggle()"></label>
+                    </div>
                 </div>
-                <div class="menu-item-container">
+                <div id="menu-toggle-lunch" class="menu-item-container">
                     <table>
                         <tr>
                             <td>Eggs Benedict</td>
@@ -100,12 +105,14 @@
                     </table>
                 </div>
                 <img id="lunch-img" src="img/lunch.jpg" alt="Burger with salad and a wrap with salad on two different plates"/>
-                <h2>Drinks</h2>
-                <div class="plus-toggle">
-                    <input type="checkbox" id="plus-toggle-drinks" />
-                    <label for="plus-toggle-drinks"></label>
+                <div class="menu-label">
+                    <h2>Drinks</h2>
+                    <div class="plus-toggle">
+                        <input type="checkbox" id="plus-toggle-drinks" />
+                        <label for="plus-toggle-drinks" onclick="drinks_toggle()"></label>
+                    </div>
                 </div>
-                <div class="menu-item-container">
+                <div id="menu-toggle-drinks" class="menu-item-container">
                     <table>
                         <tr>
                             <td>Eggs Benedict</td>
@@ -156,6 +163,8 @@
             <div class="footer-text">
                 <h4>Tel: 08 1234 5678</h4>
                 <h4>Email: <a href="mailto: info@harvestcafe.com.au">info@harvestcafe.com.au</a></h4>    
+                <h4>Opening Hours: </h4> 
+                <h4>Mon - Fri: 7am - 3pm<br>Sat - Sun: 8am - 3pm<br>CLOSED ON ALL PUBLIC HOLIDAYS</h4>
             </div>
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.3732988580464!2d138.61099514072217!3d-34.94725127294622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0ceee9835e861%3A0xfe2d2e0bc04b4981!2s123%20George%20St%2C%20Unley%20SA%205061!5e0!3m2!1sen!2sau!4v1693717426444!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -51,11 +51,11 @@ table {
 
 @font-face {
     font-family: 'bebas_neuebold';
-    src: url('../fonts/bebasneue_bold-webfont-webfont.eot');
-    src: url('../fonts/bebasneue_bold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/bebasneue_bold-webfont-webfont.woff2') format('woff2'),
-         url('../fonts/bebasneue_bold-webfont-webfont.woff') format('woff'),
-         url('../fonts/bebasneue_bold-webfont-webfont.ttf') format('truetype');
+    src: url('fonts/bebasneue_bold-webfont-webfont.eot');
+    src: url('fonts/bebasneue_bold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebasneue_bold-webfont-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue_bold-webfont-webfont.woff') format('woff'),
+         url('fonts/bebasneue_bold-webfont-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -66,11 +66,11 @@ table {
 
 @font-face {
     font-family: 'bebas_neueregular';
-    src: url('../fonts/bebasneue-regular-webfont.eot');
-    src: url('../fonts/bebasneue-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/bebasneue-regular-webfont.woff2') format('woff2'),
-         url('../fonts/bebasneue-regular-webfont.woff') format('woff'),
-         url('../fonts/bebasneue-regular-webfont.ttf') format('truetype');
+    src: url('fonts/bebasneue-regular-webfont.eot');
+    src: url('fonts/bebasneue-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue-regular-webfont.woff') format('woff'),
+         url('fonts/bebasneue-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -81,11 +81,11 @@ table {
 
 @font-face {
     font-family: 'bebas_neuebold';
-    src: url('../fonts/bebasneue_bold-webfont.eot');
-    src: url('../fonts/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/bebasneue_bold-webfont.woff2') format('woff2'),
-         url('../fonts/bebasneue_bold-webfont.woff') format('woff'),
-         url('../fonts/bebasneue_bold-webfont.ttf') format('truetype');
+    src: url('fonts/bebasneue_bold-webfont.eot');
+    src: url('fonts/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue_bold-webfont.woff') format('woff'),
+         url('fonts/bebasneue_bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -96,11 +96,11 @@ table {
 
 @font-face {
     font-family: 'courier_newregular';
-    src: url('../fonts/cour-webfont.eot');
-    src: url('../fonts/cour-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/cour-webfont.woff2') format('woff2'),
-         url('../fonts/cour-webfont.woff') format('woff'),
-         url('../fonts/cour-webfont.ttf') format('truetype');
+    src: url('fonts/cour-webfont.eot');
+    src: url('fonts/cour-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cour-webfont.woff2') format('woff2'),
+         url('fonts/cour-webfont.woff') format('woff'),
+         url('fonts/cour-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -111,11 +111,11 @@ table {
 
 @font-face {
     font-family: 'courier_newbold';
-    src: url('../fonts/courbd-webfont.eot');
-    src: url('../fonts/courbd-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/courbd-webfont.woff2') format('woff2'),
-         url('../fonts/courbd-webfont.woff') format('woff'),
-         url('../fonts/courbd-webfont.ttf') format('truetype');
+    src: url('fonts/courbd-webfont.eot');
+    src: url('fonts/courbd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/courbd-webfont.woff2') format('woff2'),
+         url('fonts/courbd-webfont.woff') format('woff'),
+         url('fonts/courbd-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -183,7 +183,6 @@ section {
     width: 100%;
     padding-top: 2rem;
 }
-
 
 /* IMAGES & MEDIA */
 .box-img img {
@@ -423,22 +422,30 @@ span {
     flex-wrap: wrap;
 }
 
-.menu-dropdown-container h2 {
-    width: 60%;
-}
-
 .menu-dropdown-container img {
     width: calc(100% / 3);
 }
 
+.menu-label {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-label h2 {
+    padding: 0.5rem 0;
+}
 
 .plus-toggle {
+    height: 32px;
     > label {
       width: 2rem;
       height: 2rem;
       cursor: pointer;
       position: relative;
       display: block;
+      bottom: 12px;
       
       &:before,
       &:after {
@@ -480,11 +487,19 @@ span {
     }
   }
 
+.menu-show {
+    opacity: 1 !important;
+    height: 100% !important;
+
+}
+
 .menu-item-container {
     padding: 0 2rem;
     width: 100%;
-    display: none;
-}
+    opacity: 0;
+    transition: all .3s linear;
+    height: 0;
+  }
 
 .menu-item-container table {
     width: 100%;
@@ -547,7 +562,11 @@ span {
 }
 
 .footer-container .logo-container {
-    width: 300px;
+    max-width: 300px;
+}
+
+.footer-container .logo-container img {
+    width: 100%;
 }
 
 .footer-text {
