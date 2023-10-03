@@ -88,6 +88,10 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 /* TYPOGRAPHY */
 * {
   outline: 1px solid red;
@@ -334,6 +338,10 @@ span {
   padding: 5px 10px;
 }
 
+#closed-sign {
+  background-color: #ad2821;
+}
+
 /* HOME SECTION */
 /* ABOUT SECTION */
 /* Hide the first image in about section on mobile devices */
@@ -505,4 +513,27 @@ span {
 
 .footer-text a {
   color: #fff;
+}
+
+.footer-hours-socials-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-socials-container {
+  text-align: right;
+  padding: 1rem 2rem;
+}
+
+.footer-socials-container i {
+  font-size: 2rem;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer-socials-container a {
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 1rem;
 }/*# sourceMappingURL=style.css.map */

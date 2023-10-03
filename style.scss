@@ -121,6 +121,10 @@ table {
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* TYPOGRAPHY */
 * {
     outline: 1px solid red;
@@ -232,8 +236,7 @@ nav {
   user-select: none;
 }
 
-#menuToggle a
-{
+#menuToggle a {
   text-decoration: none;
   color: $light;
   
@@ -391,6 +394,10 @@ span {
 
 .open-container h3 {
     padding: 5px 10px;
+}
+
+#closed-sign {
+    background-color: #ad2821;
 }
 
 /* HOME SECTION */
@@ -575,4 +582,27 @@ span {
 
 .footer-text a {
     color: #fff;
+}
+
+.footer-hours-socials-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-socials-container {
+    text-align: right;
+    padding: 1rem 2rem;
+}
+
+.footer-socials-container i {
+    font-size: 2rem;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer-socials-container a {
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 1rem;
 }
