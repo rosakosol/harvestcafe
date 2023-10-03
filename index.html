@@ -15,15 +15,15 @@
         <section class="home-container" id="home">
             <nav role="navigation">
                 <div id="menuToggle">
-                    <input type="checkbox" />
+                    <input id="menu-check" type="checkbox" />
                     <span></span>
                     <span></span>
                     <span></span>
-                    <ul id="navmenu">
-                        <a href="#home"><li>Home</li></a>
-                        <a href="#about"><li>About</li></a>
-                        <a href="#menu"><li>Menu</li></a>
-                        <a href="#contact"><li>Contact</li></a>
+                    <ul class="nav-links" id="navmenu">
+                        <a href="#home" onclick="menu_toggle()"><li>Home</li></a>
+                        <a href="#about" onclick="menu_toggle()"><li>About</li></a>
+                        <a href="#menu" onclick="menu_toggle()"><li>Menu</li></a>
+                        <a href="#contact" onclick="menu_toggle()"><li>Contact</li></a>
                     </ul>
                 </div>
                 <div class="logo-container">

@@ -88,5 +88,16 @@ function drinks_toggle() {
 }
 
 
+// Close slide-out mobile menu when menu link is clicked
+function menu_toggle() {
+    var menu = document.getElementById("menu-check");
+    var links = document.getElementsByClassName("nav-links");
+    
+    for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', () => {
+            menu.checked = false;
+        })
+    }
+}
 
 
