@@ -12,47 +12,56 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
     <body>
+        <!-- HOME SECTION -->
         <section class="home-container" id="home">
             <nav role="navigation">
-                <div id="menuToggle">
+                <!-- HAMBURGER MOBILE MENU -->
+                <div id="hamburger-menu-toggle">
                     <input id="menu-check" type="checkbox" />
                     <span></span>
                     <span></span>
                     <span></span>
-                    <ul class="nav-links" id="navmenu">
+                    <!-- NAVIGATION MENU -->
+                    <ul class="nav-links" id="nav-menu">
                         <a href="#home" onclick="menu_toggle()"><li>Home</li></a>
                         <a href="#about" onclick="menu_toggle()"><li>About</li></a>
                         <a href="#menu" onclick="menu_toggle()"><li>Menu</li></a>
                         <a href="#contact" onclick="menu_toggle()"><li>Contact</li></a>
                     </ul>
                 </div>
+                <!-- HEADER LOGO -->
                 <div class="logo-container">
                     <img src="img/logo-black.svg" alt="Black and white logo showing a upside-down fork and Harvest Cafe in capital letters"/>
                 </div>
             </nav>
             <div class="subheading-container">
                 <h3>123 George St, Adelaide SA 5000</h3>
+                <!-- DISPLAY WHETHER BUSINESS IS OPEN/CLOSED LOGO -->
                 <div class="open-container">
                     <span id ="open-sign">OPEN</span>
                     <span id="closed-sign">CLOSED</span>
                     <h3 id="date">DATE</h3>
                 </div>
+                <!-- HOME HERO IMAGE -->
                 <div class="img-container box-img">
                     <img src="img/home.jpg" alt="Inside of cafe showing barista and rustic interior"/>
                 </div>
             </div>
         </section>
+        <!-- ABOUT SECTION -->
         <section class="about-container" id="about">
             <div class="container-text">
                 <h1>About</h1>
                 <p>Ipsum irure quis deserunt sint qui velit aliquip duis veniam. Reprehenderit in in ut adipisicing irure reprehenderit eiusmod cillum incididunt occaecat anim occaecat voluptate cupidatat. Eiusmod deserunt officia quis excepteur amet amet dolore anim laborum dolor tempor nulla ex aliquip.
                 </p>
             </div>
+            <!-- ABOUT IMAGE -->
             <div class="img-container box-img">
                 <img id="about-img-1" src="img/about-1.jpg" alt="Two containers, top-down view showing an avocado, chickpea and rice bowl with lemons"/>
                 <img src="img/about-2.jpg" alt="Two slices of banana bread with a light-coloured spread, yellow capsicum and fruits decorating the sides of the plate"/>
             </div>
         </section>
+        <!-- VEGAN INFO SECTION -->
         <section class="vegan-container">
             <div class="container-text">
                 <h1>Vegan & health conscious</h1>
@@ -60,6 +69,7 @@
                 </p>
             </div>
         </section>
+        <!-- MENU SECTION -->
         <section class="menu-container" id="menu">
             <div class="container-text">
                 <h1>Menu</h1>
@@ -67,46 +77,117 @@
                 </p>
             </div>
             <div class="menu-dropdown-container">
+                <!-- BREAKFAST MENU TOGGLE CONTAINER -->
                 <div class="menu-label">
-                    <h2>Breakfast</h2>
+                    <h2>Breakfast (ALL-DAY)</h2>
                         <div class="plus-toggle">
                             <input type="checkbox" id="plus-toggle-breakfast" />
                             <label for="plus-toggle-breakfast" onclick="breakfast_toggle()"></label>
                         </div>
                 </div>
+                <!-- BREAKFAST MENU TABLE -->
                 <div id="menu-toggle-breakfast" class="menu-item-container" >
                     <table>
                         <tr>
+                            <td>Big Brekky Plate</td>
+                            <td>19.00</td>
+                        </tr>
+                        <tr>
                             <td>Eggs Benedict</td>
+                            <td>15.00</td>
+                        </tr>
+                        <tr>
+                            <td>Acai Bowl</td>
+                            <td>15.00</td>
+                        </tr>
+                        <tr>
+                            <td>Smashed Avo on Toast</td>
+                            <td>14.00</td>
+                        </tr>
+                        <tr>
+                            <td>Omelette</td>
+                            <td>12.00</td>
+                        </tr>
+                        <tr>
+                            <td>Bacon and Egg Roll</td>
+                            <td>11.00</td>
+                        </tr>
+                        <tr>
+                            <td>Cheese Toastie</td>
+                            <td>9.00</td>
+                        </tr>
+                        <tr>
+                            <td>Butter on Toast</td>
+                            <td>9.00</td>
+                        </tr>
+                        <tr>
+                            <td>Croissant</td>
                             <td>6.00</td>
                         </tr>
                         <tr>
-                            <td>Toast</td>
+                            <td>Banana Bread</td>
                             <td>6.00</td>
                         </tr>
                     </table>
                 </div>
+                <!-- BREAKFAST IMAGE -->
                 <img id="breakfast-img" src="img/breakfast.jpg" alt="Muesli yoghurt bowl with strawberries, blackberries and bananas"/>
+                <!-- LUNCH MENU TOGGLE CONTAINER -->
                 <div class="menu-label">
-                    <h2>Lunch</h2>
+                    <h2>Lunch (ALL-DAY)</h2>
                     <div class="plus-toggle">
                         <input type="checkbox" id="plus-toggle-lunch" />
                         <label for="plus-toggle-lunch" onclick="lunch_toggle()"></label>
                     </div>
                 </div>
+                <!-- LUNCH MENU TABLE -->
                 <div id="menu-toggle-lunch" class="menu-item-container">
                     <table>
                         <tr>
-                            <td>Eggs Benedict</td>
-                            <td>6.00</td>
+                            <td>Prawn Linguine Pasta</td>
+                            <td>24.00</td>
                         </tr>
                         <tr>
-                            <td>Toast</td>
-                            <td>6.00</td>
+                            <td>Mediterranean Plate</td>
+                            <td>24.00</td>
+                        </tr>
+                        <tr>
+                            <td>Fish and Chips</td>
+                            <td>21.00</td>
+                        </tr>
+                        <tr>
+                            <td>Chicken Schnitzel</td>
+                            <td>21.00</td>
+                        </tr>
+                        <tr>
+                            <td>BLT Sandwich</td>
+                            <td>19.00</td>
+                        </tr>
+                        <tr>
+                            <td>Angus Beef Burger</td>
+                            <td>17.00</td>
+                        </tr>
+                        <tr>
+                            <td>Halloumi Salad</td>
+                            <td>15.00</td>
+                        </tr>
+                        <tr>
+                            <td>Grilled Chicken Salad</td>
+                            <td>15.00</td>
+                        </tr>
+                        <tr>
+                            <td>Protein Salad</td>
+                            <td>15.00</td>
+                        </tr>
+                        <tr>
+                            <td>Greek Salad</td>
+                            <td>15.00</td>
                         </tr>
                     </table>
                 </div>
+                <!-- LUNCH IMAGE -->
                 <img id="lunch-img" src="img/lunch.jpg" alt="Burger with salad and a wrap with salad on two different plates"/>
+                <!-- DRINKS MENU TOGGLE CONTAINER -->
                 <div class="menu-label">
                     <h2>Drinks</h2>
                     <div class="plus-toggle">
@@ -114,41 +195,80 @@
                         <label for="plus-toggle-drinks" onclick="drinks_toggle()"></label>
                     </div>
                 </div>
+                <!-- DRINKS MENU TABLE -->
                 <div id="menu-toggle-drinks" class="menu-item-container">
                     <table>
                         <tr>
-                            <td>Eggs Benedict</td>
-                            <td>6.00</td>
+                            <td>Tea (English/Green/Jasmine)</td>
+                            <td>4.00</td>
                         </tr>
                         <tr>
-                            <td>Toast</td>
-                            <td>6.00</td>
+                            <td>Latte</td>
+                            <td>5.50</td>
+                        </tr>
+                        <tr>
+                            <td>Flat White</td>
+                            <td>5.50</td>
+                        </tr>
+                        <tr>
+                            <td>Cappuccino</td>
+                            <td>5.50</td>
+                        </tr>
+                        <tr>
+                            <td>Mocha</td>
+                            <td>5.50</td>
+                        </tr>
+                        <tr>
+                            <td>Piccolo</td>
+                            <td>3.50</td>
+                        </tr>
+                        <tr>
+                            <td>Soft Drink (Coke/Pepsi/Sprite/Fanta)</td>
+                            <td>4.00</td>
+                        </tr>
+                        <tr>
+                            <td>Milkshake (Strawberry/Blueberry/Mango)</td>
+                            <td>8.00</td>
+                        </tr>
+                        <tr>
+                            <td>Iced Coffee</td>
+                            <td>7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Juices (Orange/Apple/Pineapple)</td>
+                            <td>6.50</td>
                         </tr>
                     </table>
                 </div>
+                <!-- DRINKS IMAGE -->
                 <img id="drinks-img" src="img/drinks.jpeg" alt="Two blueberry smoothies"/>
             </div>
         </section>
+        <!-- MISSION SECTION -->
         <section class="mission-container">
             <div class="container-text">
                 <h1>Our mission</h1>
                 <p>Ipsum irure quis deserunt sint qui velit aliquip duis veniam. Reprehenderit in in ut adipisicing irure reprehenderit eiusmod cillum incididunt occaecat anim occaecat voluptate cupidatat. Eiusmod deserunt officia quis excepteur amet amet dolore anim laborum dolor tempor nulla ex aliquip.
                 </p>
             </div>
+            <!-- MISSION IMAGE -->
             <div class="img-container">
                 <img src="img/mission.jpg" alt="Bright green grassy hills in a mountainous area"/>
             </div>
         </section>
+        <!-- SOCIAL SECTION -->
         <section class="social-container">
             <div class="container-text">
                 <h1>#harvestcafe</h1>
                 <p>Ipsum irure quis deserunt sint qui velit aliquip duis veniam. Reprehenderit in in ut adipisicing irure reprehenderit eiusmod cillum incididunt occaecat anim occaecat voluptate cupidatat. Eiusmod deserunt officia quis excepteur amet amet dolore anim laborum dolor tempor nulla ex aliquip.
                 </p>
             </div>
+            <!-- SOCIALS IMAGE -->
             <div class="img-container">
                 <img src="img/hashtag.jpg" alt="POV of someone taking photo on iPhone of a woman smiling at a venue"/>
             </div>
         </section>
+        <!-- CONTACT SECTION -->
         <section class="contact-container" id="contact">
             <div class="container-text">
                 <h1>Contact</h1>
@@ -156,8 +276,8 @@
                 <p><span>Tel:</span><br>08 1234 5678</p>
                 <p><span>Email:</span><br><a href="mailto: info@harvestcafe.com.au">info@harvestcafe.com.au</a></p>
             </div>
-
         </section>
+        <!-- FOOTER SECTION -->
         <footer class="footer-container">
             <div class="logo-container">
                 <img src="img/logo-white.svg" alt="White logo showing a upside-down fork and Harvest Cafe in capital letters"/>     
@@ -165,6 +285,7 @@
             <div class="footer-text">
                 <h4>Tel: 08 1234 5678</h4>
                 <h4>Email: <a href="mailto: info@harvestcafe.com.au">info@harvestcafe.com.au</a></h4>    
+                <!-- FOOTER OPENING HOURS AND SOCIALS CONTAINER -->
                 <div class="footer-hours-socials-container">
                     <h4>Opening Hours:<br><br>Mon - Fri: 7am - 3pm<br>Sat - Sun: 8am - 3pm<br>CLOSED ON ALL PUBLIC HOLIDAYS</h4>
                     <div class="footer-socials-container">
@@ -173,7 +294,7 @@
                     </div>
                 </div>
             </div>
- 
+            <!-- GOOGLE MAPS CONTAINER -->
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.3732988580464!2d138.61099514072217!3d-34.94725127294622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0ceee9835e861%3A0xfe2d2e0bc04b4981!2s123%20George%20St%2C%20Unley%20SA%205061!5e0!3m2!1sen!2sau!4v1693717426444!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>

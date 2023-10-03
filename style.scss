@@ -225,7 +225,7 @@ nav {
     display: flex;
 }
 
-#menuToggle {
+#hamburger-menu-toggle {
   display: block;
   position: relative;
   top: 2rem;
@@ -236,21 +236,21 @@ nav {
   user-select: none;
 }
 
-#menuToggle a {
+#hamburger-menu-toggle a {
   text-decoration: none;
   color: $light;
   
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
+#hamburger-menu-toggle a:hover
 {
   color: $light;
   text-decoration: underline;
 }
 
 
-#menuToggle input
+#hamburger-menu-toggle input
 {
   display: block;
   width: 40px;
@@ -270,7 +270,7 @@ nav {
 /*
  * Just a quick hamburger
  */
-#menuToggle span
+ #hamburger-menu-toggle span
 {
   display: block;
   width: 33px;
@@ -290,12 +290,12 @@ nav {
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
+#hamburger-menu-toggle span:first-child
 {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
+#hamburger-menu-toggle span:nth-last-child(2)
 {
   transform-origin: 0% 100%;
 }
@@ -304,7 +304,7 @@ nav {
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
+ #hamburger-menu-toggle input:checked ~ span
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
@@ -314,7 +314,7 @@ nav {
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3)
+ #hamburger-menu-toggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
@@ -323,7 +323,7 @@ nav {
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
+ #hamburger-menu-toggle input:checked ~ span:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
 }
@@ -332,7 +332,7 @@ nav {
  * Make this absolute positioned
  * at the top left of the screen
  */
-#navmenu
+#nav-menu
 {
   position: absolute;
   width: 100vw;
@@ -351,7 +351,7 @@ nav {
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#navmenu li
+#nav-menu li
 {
   padding: 3px 0;
   margin: 20px 0;
@@ -361,7 +361,7 @@ nav {
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul
+#hamburger-menu-toggle input:checked ~ ul
 {
   transform: none;
 }
@@ -501,7 +501,7 @@ span {
 }
 
 .menu-item-container {
-    padding: 0 2rem;
+    padding: 0 2rem 2rem 2rem;
     width: 100%;
     opacity: 0;
     transition: all .3s linear;
