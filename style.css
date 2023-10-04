@@ -90,6 +90,7 @@ table {
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* TYPOGRAPHY */
@@ -114,13 +115,13 @@ h2 {
   font-family: "courier_newbold", serif;
   font-size: 1.6rem;
   text-transform: uppercase;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
 }
 
 h3 {
   font-family: "courier_newbold", serif;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 h4 {
@@ -140,7 +141,6 @@ li {
   font-family: "courier_newregular", serif;
   font-size: 1rem;
   width: 100%;
-  padding: 20px;
 }
 
 a {
@@ -171,6 +171,7 @@ img {
 
 .logo-container img {
   width: 70vw;
+  max-width: 300px;
 }
 
 .map-container iframe {
@@ -282,7 +283,7 @@ nav {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  margin: -100px 0 0 -50px;
+  margin: -100px 0 0 -25px;
   padding: 50px;
   padding-top: 125px;
   background: #505c34;
@@ -329,7 +330,7 @@ span {
 
 .open-container {
   text-align: center;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -342,7 +343,6 @@ span {
   background-color: #ad2821;
 }
 
-/* HOME SECTION */
 /* ABOUT SECTION */
 /* Hide the first image in about section on mobile devices */
 #about-img-1 {
@@ -376,17 +376,13 @@ span {
 
 .menu-label {
   width: 100%;
-  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
 }
 
-.menu-label h2 {
-  padding: 0.5rem 0;
-}
-
 .plus-toggle {
   height: 32px;
+  padding-right: 2rem;
 }
 .plus-toggle > label {
   width: 2rem;
@@ -518,6 +514,7 @@ span {
 .footer-hours-socials-container {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 2rem;
 }
 
 .footer-socials-container {
@@ -536,4 +533,45 @@ span {
   font-size: 2rem;
   text-align: center;
   margin-left: 1rem;
+}
+
+/* SCREENS LARGER THAN 600PX */
+@media only screen and (min-width: 700px) {
+  * {
+    outline: 1px solid blue;
+  }
+  h1, h2, h3, h4, p {
+    padding: 1rem 8rem;
+  }
+  .subheading-container h3 {
+    font-size: 1.2rem;
+  }
+  /* HOME SECTION */
+  .home-container {
+    margin-bottom: 4rem;
+  }
+  .hero-img {
+    width: 80vw;
+    margin: 0 auto;
+    box-shadow: 30px 30px #505c34;
+  }
+  .footer-socials-container {
+    padding: 1rem 8rem;
+  }
+  .box-img img {
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  * {
+    outline: 1px solid yellow;
+  }
+  .open-container {
+    display: flex;
+  }
+  h1, h2, h3, h4, p {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */
