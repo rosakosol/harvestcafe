@@ -543,6 +543,9 @@ span {
   h1, h2, h3, h4, p {
     padding: 1rem 8rem;
   }
+  p {
+    padding-bottom: 3rem;
+  }
   .subheading-container h3 {
     font-size: 1.2rem;
   }
@@ -561,6 +564,27 @@ span {
   .box-img img {
     padding: 0;
     box-sizing: border-box;
+  }
+  /* ABOUT SECTION */
+  .about-container .img-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 3rem;
+    padding-bottom: 4rem;
+  }
+  #about-img-1 {
+    display: block;
+  }
+  .about-container-img-1, .about-container-img-2 {
+    padding: 0 2rem;
+    margin: auto;
+  }
+  /* MENU SECTION */
+  .plus-toggle {
+    padding-right: 8rem;
+  }
+  .menu-item-container {
+    padding: 0 8rem 2rem 8rem;
   }
 }
 @media only screen and (min-width: 1000px) {
