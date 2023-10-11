@@ -643,6 +643,10 @@ span {
   * {
     outline: 1px solid yellow;
   }
+  section {
+    padding: 8rem 0;
+  }
+  /* OPEN/CLOSED SIGN */
   .open-container {
     display: flex;
     width: 300px;
@@ -656,16 +660,37 @@ span {
   .open-container span {
     font-size: 1rem;
   }
+  /* TYPOGRAPHY */
   h1, h2, h3, h4, p {
     max-width: 800px;
     margin: 0 auto;
   }
+  /* HAMBURGER MENU */
   #hamburger-menu-toggle {
     display: none;
   }
   #nav-menu {
     display: block;
   }
+  /* HOME SECTION */
+  .hero-img {
+    width: 60vw;
+    max-width: 1000px;
+  }
+  /* ABOUT SECTION */
+  .about-container .img-container {
+    max-width: 1000px;
+  }
+  /* VEGAN SECTION */
+  .vegan-container img {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  /* MENU SECTION */
+  .menu-dropdown-container {
+    text-align: left;
+  }
+  /* FOOTER SECTION */
   .footer-hours-socials-container {
     max-width: 800px;
     margin: 0 auto;
