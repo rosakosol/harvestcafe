@@ -688,7 +688,15 @@ span {
   }
   /* MENU SECTION */
   .menu-dropdown-container {
-    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .plus-toggle {
+    display: none;
+  }
+  .menu-item-container {
+    opacity: 1 !important;
+    height: 100%;
   }
   /* FOOTER SECTION */
   .footer-hours-socials-container {
