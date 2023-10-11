@@ -754,7 +754,26 @@ span {
         margin: 0 auto;
     }
 
-    section {
-
+    #hamburger-menu-toggle {
+        display: none;
     }
+
+    #nav-menu {
+        display: block;
+    }
+
+    .footer-hours-socials-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .footer-hours-socials-container h4 {
+        padding-right: 0rem;
+        padding-left: 2rem;
+    }
+
+    .footer-socials-container {
+        padding: 1rem 8rem;
+    }
+
 }
