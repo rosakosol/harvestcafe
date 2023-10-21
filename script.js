@@ -5,7 +5,7 @@ adelaideTime = adelaideTime.split(',').join('');
 
 // Refreshes time every second 
 function display_c() {
-    var refresh=1000; // Refresh rate in milli seconds
+    var refresh=10000; // Refresh rate in milli seconds
     mytime=setTimeout('display_c()',refresh)
 }
 

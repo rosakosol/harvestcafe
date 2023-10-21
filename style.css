@@ -692,7 +692,7 @@ span {
   }
   /* MENU SECTION */
   .menu-dropdown-container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   .menu-dropdown-container h2 {
@@ -705,17 +705,27 @@ span {
     order: 0;
     box-shadow: 30px 30px white;
   }
-  #menu-toggle-lunch {
+  #lunch-label {
     order: 1;
   }
+  #menu-toggle-lunch {
+    order: 2;
+    padding-left: 2em;
+  }
   #lunch-img {
-    order: 0;
+    order: 1;
+    margin-left: 8em;
+    box-shadow: -30px 30px white;
+  }
+  #drinks-label {
+    order: 2;
   }
   #menu-toggle-drinks {
     order: 2;
   }
   #drinks-img {
     order: 2;
+    box-shadow: 30px 30px white;
   }
   .plus-toggle {
     display: none;
