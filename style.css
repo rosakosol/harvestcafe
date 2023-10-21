@@ -95,7 +95,6 @@ html {
 
 /* TYPOGRAPHY */
 * {
-  outline: 1px solid red;
   box-sizing: border-box;
 }
 
@@ -543,9 +542,6 @@ span {
 
 /* SCREENS LARGER THAN 600PX */
 @media only screen and (min-width: 700px) {
-  * {
-    outline: 1px solid blue;
-  }
   h1, h2, h3, h4, p {
     padding: 1rem 8rem;
   }
@@ -644,9 +640,6 @@ span {
   }
 }
 @media only screen and (min-width: 1000px) {
-  * {
-    outline: 1px solid yellow;
-  }
   section {
     padding: 8rem 0;
   }
@@ -671,10 +664,39 @@ span {
   }
   /* HAMBURGER MENU */
   #hamburger-menu-toggle {
+    display: block;
+  }
+  #hamburger-menu-toggle input {
     display: none;
+  }
+  #hamburger-menu-toggle span {
+    display: none;
+  }
+  #hamburger-menu-toggle a:hover {
+    color: black;
+    text-decoration: underline;
   }
   #nav-menu {
     display: block;
+    transform: none;
+    width: 350px;
+    height: 100%;
+    background: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 25vw;
+    left: 10vw;
+  }
+  #nav-menu li {
+    color: black;
+    font-weight: bold;
+    font-family: "bebas_neuebold", Arial, sans-serif;
+    font-size: 1.4rem;
+    text-align: right;
+    background: white;
+    padding: 0.3rem 1rem;
   }
   /* HOME SECTION */
   .hero-img {
