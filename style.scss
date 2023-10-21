@@ -547,6 +547,7 @@ span {
 /* CONTACT SECTION */
 .contact-container .container-text {
     text-align: center;
+    background-color: white;
 }
 
 .contact-container .container-text h1 {
@@ -633,9 +634,7 @@ span {
         margin: 0 auto;
         box-shadow: 30px 30px $green;
     }
-    .footer-socials-container {
-        padding: $padding-md;
-    }
+
     .box-img img {
         padding: 0;
         box-sizing: border-box;
@@ -677,7 +676,7 @@ span {
 
     .mission-container .img-container {
         order: 1;
-        height: 250px;
+        height: 350px;
         width: 400px;
     }
 
@@ -688,7 +687,7 @@ span {
 
     .mission-container .container-text {
         order: 2;
-        height: 250px;
+        height: 350px;
         width: 400px;
     }
 
@@ -708,23 +707,47 @@ span {
     }
 
     .social-container .img-container {
-        height: 250px;
+        height: 350px;
         width: 400px;
     }
 
     .social-container .img-container img {
         height: 100%;
         width: 100%;
+        object-fit: cover;
     }
 
     .social-container .container-text {
-        height: 250px;
+        height: 350px;
         width: 400px;
     }
 
     .social-container .container-text h1, .social-container .container-text p {
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    /* CONTACT SECTION */
+    .contact-container {
+        background: url('img/contact.jpg') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed; 
+        padding: 6rem;
+    }
+
+    .contact-container .container-text {
+        padding-top: 2rem;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* FOOTER SECTION */
+    .footer-socials-container {
+        padding: $padding-md;
+    }
+
+    .footer-hours-socials-container h4 {
+        padding-right: 0rem;
     }
   }
 
@@ -802,7 +825,7 @@ span {
 
     /* HOME SECTION */
     .hero-img {
-        width: 60vw;
+        width: 80vw;
         max-width: 1000px;
     }
 
@@ -813,18 +836,23 @@ span {
 
     /* VEGAN SECTION */
     .vegan-container img {
-        max-width: 800px;
+        max-width: 700px;
         margin: 0 auto;
     }
 
     /* MENU SECTION */
     .menu-dropdown-container {
+        justify-content: space-evenly;
         max-width: 1200px;
         margin: 0 auto;
     }
 
     .menu-dropdown-container h2 {
         width: 100%;
+    }
+
+    .menu-label {
+        padding-bottom: 1rem;
     }
 
     #menu-toggle-breakfast {
@@ -847,7 +875,6 @@ span {
 
     #lunch-img {
         order: 1;
-        margin-left: 8em;
         box-shadow: -30px 30px white;
     }
 
@@ -871,13 +898,14 @@ span {
     .menu-item-container {
         opacity: 1 !important;
         height: 100%;
-        width: 60%;
+        width: 50vw;
         padding-right: 2rem;
     }
 
     .menu-item-description {
         display: block;
         height: 50px;
+        margin-bottom: 1rem;
     }
 
     .menu-item-description td {

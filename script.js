@@ -19,7 +19,7 @@ window.onload = function displayDate() {
 }
 // Time variables
 var day = adelaideTime[0] + adelaideTime[1] + adelaideTime[2];
-var hour = adelaideTime[15] + adelaideTime[16];
+var hour = adelaideTime[16] + adelaideTime[17];
 const weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 
 // Adelaide public holidays 2023
@@ -63,6 +63,7 @@ function check_open() {
     } else {
         // Cafe closed before 8am and after 3pm
         if (parseInt(hour) < 8 || parseInt(hour) > 15) {
+            console.log(hour);
             console.log("Closed.");
             closedSign.classList.toggle("active");
         } else {
